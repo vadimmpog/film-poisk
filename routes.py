@@ -10,9 +10,11 @@ def sign_up():
 def sign_in():
     pass
 
+
 @app.route('/set_sub', methods=['POST'])
 def set_sub():
     pass
+
 
 @app.route('/search', methods=['POST'])
 def search():
