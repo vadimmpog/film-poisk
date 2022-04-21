@@ -1,12 +1,8 @@
 from flask import Flask
+from flask_session import Session
 
 app = Flask(__name__)
+app.secret_key = 'dfsdlfkskfsadfsadaa'
+app.config.from_pyfile('hello.cfg')
 
-
-@app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
-
-
-if __name__ == '__main__':
-    app.run()
+Session(app)
